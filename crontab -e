@@ -1,0 +1,4 @@
+# Create with crontab -e command:
+
+*/15 * * * * ~/Public/nightMode/nightMode.sh # run every 15 minutes
+@reboot ~/Public/nightMode/nightMode.sh # run at reboot
