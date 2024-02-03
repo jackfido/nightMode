@@ -1,14 +1,6 @@
 #!/bin/bash
-
-# First obtain a location code from: https://weather.codes/search/
-
-# Insert your location. For example LOXX0001 is a location code for Bratislava, Slovakia
-# Mi ciudad mas proxima es San Antonio
 location="USTX1200"
-tmpfile=/tmp/$location.out
-
-# Obtain sunrise and sunset raw data from weather.com
-wget -q "https://weather.com/weather/today/l/$location" -O "$tmpfile"
+tmpfile=~/Public/nightMode/tmp/$location.out
 
 SUNR=$(grep SunriseSunset "$tmpfile" | grep -oE '((1[0-2]|0?[1-9]):([0-5][0-9]) ?([AaPp][Mm]))' | head -1)
 SUNS=$(grep SunriseSunset "$tmpfile" | grep -oE '((1[0-2]|0?[1-9]):([0-5][0-9]) ?([AaPp][Mm]))' | tail -1)
