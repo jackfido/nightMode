@@ -10,3 +10,5 @@ tmpfile=~/Public/nightMode/tmp/$location.out
 wget -q "https://www.timeanddate.com/sun/mexico/$location" -O "$tmpfile"
 
 echo "Monterrey time getted successfully"
+
+bash ~/Public/nightMode/nightMode.sh
