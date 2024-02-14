@@ -9,7 +9,7 @@
 #		run THIS file in startup applications to run when your session start after a shotdown or reboot
 #		run crontab -e to run nightMode.sh file, directly, every minute to set theme as soon as the sunset/sunrise occurss -> * * * * * ~/Public/nightMode/nightMode.sh
 #		run THIS file in crontab -e every day at 0 hrs to get the new values as soon as new day occurs -> 0 0 * * * ~/Public/nightMode/getSunRiseAndSet.sh
-#		run THIS task each 3 hours, it allow us to have the values up-to-date in case of pc enters in hibernatin or freeze state during a day change in the middle night and then do not run update with previous crontab -> 0 0/3 * * * ~/Public/nightMode/getSunRiseAndSet.sh
+#		run THIS task each 8 hours, it allow us to have the values up-to-date in case of pc enters in hibernatin or freeze state during a day change in the middle night and then do not run update with previous crontab -> 0 0/3 * * * ~/Public/nightMode/getSunRiseAndSet.sh
 
 # file name and location
 location="monterrey"

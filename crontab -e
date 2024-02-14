@@ -2,4 +2,4 @@
 
 * * * * * ~/Public/nightMode/nightMode.sh
 0 0 * * * ~/Public/nightMode/getSunRiseAndSet.sh
-
+0 */8 * * * ~/Public/nightMode/getSunRiseAndSet.sh
