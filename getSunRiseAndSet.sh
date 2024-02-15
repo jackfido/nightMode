@@ -19,8 +19,16 @@ tmpfile=~/Public/nightMode/tmp/$location.out
 lastUpdate=$(date -r $tmpfile +"%Y%m%d")
 currentDate=$(date +%Y%m%d)
 
-# compare file date with current date to determine if need download the values
-if [ "$lastUpdate" -lt "$currentDate" ]; then
+# if file doesnt exists
+if [ ! -z "$lastUpdate" ]; then
+	# compare file date with current date to determine if need download the values
+	if [ "$lastUpdate" -lt "$currentDate" ]; then
+		wget -q "https://www.timeanddate.com/sun/mexico/$location" -O "$tmpfile"
+
+		echo "Monterrey time getted successfully"
+		bash ~/Public/nightMode/nightMode.sh
+	fi
+else
 	wget -q "https://www.timeanddate.com/sun/mexico/$location" -O "$tmpfile"
 
 	echo "Monterrey time getted successfully"
