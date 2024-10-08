@@ -1,5 +1,5 @@
 # Night Mode
-This files allows to change automatic day/night mode on Ubuntu, tested on Ubuntu Unity 22.04.4 LTS
+This files allows to change automatic day/night mode on Ubuntu, tested on Ubuntu Unity 22.04.4 LTS and Ubuntu Unity 24.04.1 LTS
 
 1. Into `getSunRiseAndSet.sh` file can replace **location** and **tmpfile** variables to set your own location, search into this link for it: https://www.timeanddate.com/sun/
 2. Do same into `nightMode.sh` file with the same named variables, they must be same values
